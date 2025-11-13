@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye el padding y el border en el tamaño total del elemento */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.6rem; /* 16px - si algo no tiene fontsize este lo toma */
+    line-height: 1.5;
+
+    color: #1E3A5F;
+    background-color: #E6EAF0;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    color: #1E3A5F;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.btn {
+    background: #1E3A5F;
+    display: inline-block;
+    padding: 1rem;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header, footer {
+    background: #1E3A5F;
+    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.div-logo {
+    margin-left: 2rem;
+    font-size: 3rem;
+    font-weight: bold; 
+}
+
+.logo, .header-nav ul li a {
+    color: inherit; /* heredar el color */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    display: inline-block;
+    padding: 2rem;
+}
+
+.header-nav {
+    margin-right: 2rem;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.footer {
+    padding: 2rem;
+}
+
+.titulo-home {
+    margin: 2rem;
+}
+
+.titulo-productos {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.parrafo {
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #27C4A8;
+    color: #1E3A5F;
+    width: 40rem;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+
+.titulo-contacto {
+    margin: 2rem;
+    text-align: center;
+}
+
+.form-contacto {
+    background-color: #1E3A5F;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 50rem;
+    font-size: 2rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.grupo-input label, {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #ECDDBE;
+    margin-bottom: 3rem;
+}
+
+.grupo-input textarea {
+    border: none;
+    background-color: white;
+    border-bottom: 2px solid #ECDDBE;
+    margin-bottom: 3rem;
+
+}
+
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem ;
+    margin-bottom: 2rem;
+}
+
+button {
+  background-color: #ECDDBE;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+button:hover {
+  background-color: #d7a9a9;
+}
+
+/* Responsividad: Contacto en pantallas pequeñas */
+@media (max-width: 600px) {
+  .productos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+    .contenedor-tarjetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+    
+}
