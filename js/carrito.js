@@ -20,8 +20,8 @@ const renderizarCarrito = () => {
         return;
     }
 
-    // Detecta si estamos en /pages/ para ajustar la ruta
     const basePath = window.location.pathname.includes("/pages/") ? "../" : "";
+img.src = basePath + producto.img;
 
     carrito.forEach((producto, indice) => {
         const tarjeta = document.createElement("article");
