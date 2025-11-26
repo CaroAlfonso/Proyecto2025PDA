@@ -3,6 +3,7 @@ import { eliminarDelCarrito, vaciarCarrito } from "./funcionesCarrito.js";
 import { actualizarContador } from "./ui.js";
 
 const renderizarCarrito = () => {
+    const basePath = window.location.pathname.includes("/pages/") ? "../" : "";
     
     const carrito = obtenerCarrito();
     actualizarContador(carrito);
@@ -63,3 +64,4 @@ const renderizarCarrito = () => {
 };
 
 document.addEventListener("DOMContentLoaded", renderizarCarrito);
+
