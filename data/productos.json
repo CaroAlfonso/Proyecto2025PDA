@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Freezer",
+        "precio": 300000,
+        "img": "../img/freezer.jpeg",
+        "descripcion": "Freezer de alta capacidad y eficiencia energética."
+    },
+    {
+        "id": 2,
+        "nombre": "Microondas",
+        "precio": 80000,
+        "img": "../img/microondas.jpeg",
+        "descripcion": "Microondas con múltiples funciones y diseño compacto."
+    },
+    {
+        "id": 3,
+        "nombre": "Cava para vinos",
+        "precio": 400,
+        "img": "../img/vinos.jpeg",
+        "descripcion": "Cava para vinos con control de temperatura."
+    },
+    {
+        "id": 4,
+        "nombre": "Heladera",
+        "precio": 150000,
+        "img": "../img/heladera.jpeg",
+        "descripcion": "Heladera usada en excelente estado."
+    }
+]

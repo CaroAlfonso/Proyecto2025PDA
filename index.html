@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
@@ -14,10 +15,17 @@
         <div class="div-logo"><a class= "logo" href="./index.html">Industria PDA</a></div>
         <nav class="header-nav">
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./pages/carrito.html" class="carrito-icono">
+                        🛒<span id="contador-carrito"> 0 </span>            
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -33,42 +41,41 @@
 
         <section>
             <h2 class="titulo-productos">Algunos de nuestros productos</h2>
-            <div class="contenedor-tarjetas">
-                <article class="card">
+            <div id="contenedor-tarjetas" class="contenedor-tarjetas">
+                <!--<article class="tarjeta-producto">
                     <img src="./img/microondas.jpeg" alt="Microondas">
                     <h3>Producto 1</h3>
                     <p>Precio $80000</p>
                     <button class="btn">Agregar al carrito</button>
                 </article>
                 
-                <article class="card">
+                <article class="tarjeta-producto">
                     <img src="./img/microondas1.jpeg" alt="Microondas">
                     <h3>Producto 2</h3>
                     <p>Precio $80000</p>
                     <button class="btn">Agregar al carrito</button>
                 </article>  
                 
-                <article class="card">
+                <article class="tarjeta-producto">
                     <img src="./img/freezer.jpeg" alt="Freezer">
                     <h3>Producto 3</h3>
                     <p>Precio $300000</p>
                     <button class="btn">Agregar al carrito</button>
                 </article>  
                 
-                <article class="card">
+                <article class="tarjeta-producto">
                     <img src="./img/fotocopiadora.jpeg" alt="Fotocopiadora">
                     <h3>Producto 4</h3>
                     <p>Precio $400000</p>
                     <button class="btn">Agregar al carrito</button>
                 </article>
-
+            -->
             </div>
         </section>
-    </main>
+        </main>
     <footer>
-        <p>Sitio realizado por Caro &copy; 2025 Industria PDA
-        <p>Whatsapp</p>
-        </p>
+        <p >Sitio realizado por Caro &copy; 2025 Industria PDA. Todos los derechos reservados.</p>
     </footer>
+    <script type="module" src="./js/index.js" > </script>
 </body>
 </html>
