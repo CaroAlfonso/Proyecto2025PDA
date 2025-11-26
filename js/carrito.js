@@ -7,7 +7,6 @@ const renderizarCarrito = () => {
     actualizarContador(carrito);
     
     const contenedor = document.getElementById("contenedor-carrito");
-
     const divAcciones = document.getElementById("acciones-carrito");
     
     contenedor.innerHTML = "";
@@ -21,12 +20,15 @@ const renderizarCarrito = () => {
         return;
     }
 
+    // Detecta si estamos en /pages/ para ajustar la ruta
+    const basePath = window.location.pathname.includes("/pages/") ? "../" : "";
+
     carrito.forEach((producto, indice) => {
         const tarjeta = document.createElement("article");
         tarjeta.classList.add("tarjeta-producto");
 
         const img = document.createElement("img");
-        img.src = `../${producto.img}`;
+        img.src = basePath + producto.img;  // ← Ruta corregida
         img.alt = producto.nombre;
 
         const titulo = document.createElement("h3");
@@ -37,7 +39,6 @@ const renderizarCarrito = () => {
 
         const btnEliminar = document.createElement("button");
         btnEliminar.classList.add("btn", "btn-eliminar-carrito");
-        
         btnEliminar.textContent = "Eliminar del carrito";
         btnEliminar.addEventListener("click", () => {
             eliminarDelCarrito(indice);
