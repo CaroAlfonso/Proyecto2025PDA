@@ -20,6 +20,8 @@ const renderizarCarrito = () => {
         return;
     }
 
+
+
     carrito.forEach((producto, indice) => {
         const tarjeta = document.createElement("article");
         tarjeta.classList.add("tarjeta-producto");
