@@ -20,9 +20,6 @@ const renderizarCarrito = () => {
         return;
     }
 
-    const basePath = window.location.pathname.includes("/pages/") ? "../" : "";
-img.src = basePath + producto.img;
-
     carrito.forEach((producto, indice) => {
         const tarjeta = document.createElement("article");
         tarjeta.classList.add("tarjeta-producto");
