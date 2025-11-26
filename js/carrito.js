@@ -27,7 +27,7 @@ const renderizarCarrito = () => {
         tarjeta.classList.add("tarjeta-producto");
 
         const img = document.createElement("img");
-        img.src = basePath + producto.img;  // ← Ruta corregida
+        img.src = `../${producto.img}`;
         img.alt = producto.nombre;
 
         const titulo = document.createElement("h3");
