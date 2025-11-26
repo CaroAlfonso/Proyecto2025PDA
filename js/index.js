@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => { /*Invoca al elemento*/
     const carrito = obtenerCarrito()
     actualizarContador(carrito)
 
-      fetch("../data/productos.json")
+      fetch("./data/productos.json")
       .then((res) => {
         if (!res.ok) {
           throw new Error(`Error al cargar los productos: ${res.status}`);
